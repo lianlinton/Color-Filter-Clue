@@ -152,9 +152,9 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 0.9716981, g: 0.9716981, b: 0.9716981, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_Intensity: 14
-  m_Range: 6
+  m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -227,9 +227,34 @@ MonoBehaviour:
   m_GameObject: {fileID: 106656661}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0c148c0048f048169b6e5a24656d710, type: 3}
+  m_Script: {fileID: 11500000, guid: 397dae127b9964c308e92a08ee4f6fd0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pointLight: {fileID: 106656662}
+  action:
+    m_Name: Action
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 60047a43-0e9b-40c6-825b-c717cb423dfd
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: ba61f965-a8e3-4b88-911a-e711e202eef6
+      m_Path: <Mouse>/press
+      m_Interactions: Tap
+      m_Processors: 
+      m_Groups: 
+      m_Action: Action
+      m_Flags: 0
+    m_Flags: 0
+  showLevel1: {fileID: 2800000, guid: bdb262607d1db41968d23150840a0063, type: 3}
+  showLevel2: {fileID: 2800000, guid: a39518db2e07d43578dd47c0bf81c054, type: 3}
+  showLevel3: {fileID: 2800000, guid: a9b577293ad2e4205b0036e2c8a1c501, type: 3}
+  showLevel4: {fileID: 2800000, guid: 8e32a40d033e74eab8db7289e982d0fb, type: 3}
+  hide: {fileID: 2800000, guid: ac5ab4f203633428daf329bf21c61b68, type: 3}
+  plane: {fileID: 1708239721}
+  level: 3
 --- !u!1 &214637610
 GameObject:
   m_ObjectHideFlags: 0
@@ -947,7 +972,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 38f8f806d37ff49ce93a27734ea49b83, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
